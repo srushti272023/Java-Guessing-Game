@@ -1,0 +1,31 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        int number =(int)(Math.random()*100);
+       //System.out.println(number);
+       int a;
+       System.out.println("To find the answer input -1");
+        do{
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Guess the number : ");
+        a=sc.nextInt();
+      
+        
+        if(a>number){
+        System.out.println("--Guess a smaller number--");
+        continue;
+        }
+        else if(a<number){
+        System.out.println("--Guess a bigger number--");
+        continue;
+        }
+        else{
+        System.out.println("--yayy!! Your answer is correct!!--");
+        break;
+        }
+        }
+        while(a>=0);
+            System.out.println("The number was : "+ number);
+        
+    }
+}
